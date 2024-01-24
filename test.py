@@ -83,7 +83,7 @@ print(
 )
 print(f"Standard deviation of surviving members for winning teams: {winners_std:.2f}")
 
-winner_plot = [0]*17
+winner_plot = [0]*(team_size+1)
 for winner in winners_list:
     winner_plot[winner] += 1
 print(winner_plot)
